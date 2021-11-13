@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html dir="rtl">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./assets/css/uikit-rtl.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="./assets/js/uikit.min.js"></script>
+      <script src="./assets/js/uikit-icons.min.js"></script>
+      <link rel="stylesheet" href="style2.css">
+      <title>index</title>
+</head>
+<body>
+    <div class="uk-grid-collapse" data-uk-grid>
+        <div class="uk-width-1-6 mod-side-menu uk-box-shadow-medium uk-height-viewport uk-visible@m">
+            <div class="scrollableContent" data-uk-sticky>
+                <div class="uk-flex uk-flex-middle uk-flex-center mod-side-title">
+                    <div>
+                        <img src="assets/img/logoblue.png" data-uk-img>
+                    </div>
+                </div>
+                <ul class="uk-list mod-list uk-margin-remove-top uk-nav-parent-icon" data-uk-nav>
+                    <li class="mod-active"><a href="">داشبورد</a></li>
+                    <li><a href="">آگهی ها</a></li>
+                    <li class="uk-parent">
+                        <a href="#">قرارداد</a>
+                        <ul class="uk-nav-sub mod-subnav">
+                            <li><a href="#">افزودن</a></li>
+                            <li><a href="#">لیست</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">شغل</a>
+                        <ul class="uk-nav-sub mod-subnav">
+                            <li><a href="#">افزودن</a></li>
+                            <li><a href="#">لیست</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">زبان یا برنامه</a>
+                        <ul class="uk-nav-sub mod-subnav">
+                            <li><a href="#">افزودن</a></li>
+                            <li><a href="#">لیست</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+        <div class="uk-width-5-6@m uk-width-1-1 uk-height-viewport"> 
+            <nav class="mod-header uk-sticky-placeholder" data-uk-sticky data-uk-navbar>
+                <div id="modal-full" class="uk-modal-full uk-modal" data-uk-modal>
+                    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle mod-search-bg" data-uk-height-viewport>
+                        <button class="uk-modal-close-full" type="button" data-uk-close></button>
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="جستجو" autofocus>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-hidden@m">
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#" data-uk-toggle="target: #offcanvas">
+                            <span data-uk-navbar-toggle-icon></span>
+                        </a>
+                    </div>
+                    <div id="offcanvas" data-uk-offcanvas="flip:false; overlay: true">
+                        <div class="uk-offcanvas-bar mod-menu-side uk-padding-remove">
+                            <div class="uk-flex uk-flex-middle uk-flex-center mod-side-title">
+                                <img src="assets/img/logoblue.png" data-uk-img>
+                                <button class="uk-offcanvas-close mod-black" type="button" data-uk-close></button>
+                            </div>
+                            <ul class="uk-list mod-list uk-margin-remove-top">
+                                <li class="mod-active"><a href="/index.html"><span class="uk-margin-small-left" data-uk-icon="icon:info"></span> اطلاعات تیم</a></li>
+                                <li><a href="/sarparast.html"><span class="uk-margin-small-left" data-uk-icon="icon:user"></span> سرپرست</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:users"></span> اعضا</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> مهمان ها</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:home"></span> اقامت گاه و اسکان</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cart"></span> وضعیت پرداخت</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:credit-card"></span> صدور کارت</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-right" data-uk-margin>
+                    <div class="">
+                        نام تیم
+                    </div>            
+                </div>
+                <div class="uk-navbar-left mod-signout">
+                    <a href="#">
+                        <span>خروج</span>
+                        <span data-uk-icon="icon: sign-out;ratio:1.5"></span>
+                    </a>
+                </div>
+            </nav>
+            <div class="uk-section-small">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-body">
+                        <div class="uk-margin-medium-top">
+                            <form class="uk-form-horizontal uk-margin-small" data-uk-grid>
+                                <div class="uk-width-1-1">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-text"> نام تیم</label>
+                                    <div class="uk-form-controls mod-form-controls">
+                                        <input class="uk-input mod-input mod-input-t" id="a" type="text" disabled>
+                                    </div>
+                                </div>    
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-select">استان</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select mod-select mod-input-t" name="state" onChange="iranwebsv(this.value);" disabled>
+                                            <option value="0">لطفا استان را انتخاب نمایید</option>
+                                            <option value="1">تهران</option>
+                                            <option value="2">گیلان</option>
+                                            <option value="3">آذربایجان شرقی</option>
+                                            <option value="4">خوزستان</option>
+                                            <option value="5">فارس</option>
+                                            <option value="6">اصفهان</option>
+                                            <option value="7">خراسان رضوی</option>
+                                            <option value="8">قزوین</option>
+                                            <option value="9">سمنان</option>
+                                            <option value="10">قم</option>
+                                            <option value="11">مرکزی</option>
+                                            <option value="12">زنجان</option>
+                                            <option value="13">مازندران</option>
+                                            <option value="14">گلستان</option>
+                                            <option value="15">اردبیل</option>
+                                            <option value="16">آذربایجان غربی</option>
+                                            <option value="17">همدان</option>
+                                            <option value="18">کردستان</option>
+                                            <option value="19">کرمانشاه</option>
+                                            <option value="20">لرستان</option>
+                                            <option value="21">بوشهر</option>
+                                            <option value="22">کرمان</option>
+                                            <option value="23">هرمزگان</option>
+                                            <option value="24">چهارمحال و بختیاری</option>
+                                            <option value="25">یزد</option>
+                                            <option value="26">سیستان و بلوچستان</option>
+                                            <option value="27">ایلام</option>
+                                            <option value="28">کهگلویه و بویراحمد</option>
+                                            <option value="29">خراسان شمالی</option>
+                                            <option value="30">خراسان جنوبی</option>
+                                            <option value="31">البرز</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-select">شهر</label>
+                                    <div class="uk-form-controls">
+                                        <select name="city"  class="uk-select mod-select mod-input-t" id="city" disabled>
+                                            <option value="0">لطفا استان را انتخاب نمایید</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-select">مقطع تحصیلی</label>
+                                    <div class="uk-form-controls">
+                                        <select name="degree"  class="uk-select mod-select mod-input-t" disabled>
+                                            <option value="0">دیپلم</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-text">نام مدرسه</label>
+                                    <div class="uk-form-controls mod-form-controls">
+                                        <input class="uk-input mod-input mod-input-t" type="text" disabled>
+                                    </div>
+                                </div> 
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-select">رشته 1 </label>
+                                    <div class="uk-form-controls">
+                                        <select name="degree"  class="uk-select mod-select mod-input-t" disabled>
+                                            <option value="0">دیپلم</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label mod-label" for="form-horizontal-select">رشته 2 </label>
+                                    <div class="uk-form-controls">
+                                        <select name="degree"  class="uk-select mod-select mod-input-t" disabled>
+                                            <option value="0">دیپلم</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-margin-xlarge-top">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <button class="uk-button mod-edit" type="button">ویرایش</button>
+                                    <input class="uk-button mod-edit-reg" type="button" value="ثبت ویرایش">
+                                </div>
+                                <div class="uk-width-1-2@s uk-flex uk-flex-middle uk-flex-left@s uk-flex-right">
+                                    <a class="uk-button mod-edit-con" href="#modal-example" data-uk-toggle>ویرایش نهایی</a>
+                                    <div id="modal-example" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body mod-modal uk-flex uk-flex-middle uk-flex-center">
+                                            <div>
+                                                <p>آیا مایل به ویرایش هستید</p>
+                                                <p class="uk-text-left">
+                                                    <button class="uk-button mod-con" type="button">بله</button>
+                                                    <button class="uk-button uk-modal-close mod-cancel" type="button">خیر</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="assets/js/file.js"></script>

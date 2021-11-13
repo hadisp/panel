@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html dir="rtl">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./assets/css/uikit-rtl.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="./assets/js/uikit.min.js"></script>
+      <script src="./assets/js/uikit-icons.min.js"></script>
+      <link rel="stylesheet" href="style2.css">
+      <title>index</title>
+</head>
+<body>
+    <div class="uk-grid-collapse" data-uk-grid>
+        <div class="uk-width-1-6 mod-side-menu uk-box-shadow-medium uk-height-viewport uk-visible@m">
+            <div class="scrollableContent" data-uk-sticky>
+                <div class="uk-flex uk-flex-middle uk-flex-center mod-side-title">
+                    <div class="uk-text-large">admin panel</div>
+                </div>
+                <ul class="uk-list mod-list uk-margin-remove-top">
+                    <li class="mod-active"><a href="index.html"><span class="uk-margin-small-left" data-uk-icon="icon:info"></span> اطلاعات تیم</a></li>
+                    <li><a href="sarparast.html"><span class="uk-margin-small-left" data-uk-icon="icon:user"></span> سرپرست</a></li>
+                    <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:users"></span> اعضا</a></li>
+                    <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> مهمان ها</a></li>
+                    <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:home"></span> اقامت گاه و اسکان</a></li>
+                    <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cart"></span> وضعیت پرداخت</a></li>
+                    <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:credit-card"></span> صدور کارت</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="uk-width-5-6@m uk-width-1-1 uk-height-viewport"> 
+            <nav class="uk-navbar-container uk-container mod-header uk-sticky-placeholder" data-uk-sticky data-uk-navbar>
+                <div id="modal-full" class="uk-modal-full uk-modal" data-uk-modal>
+                    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle mod-search-bg" data-uk-height-viewport>
+                        <button class="uk-modal-close-full" type="button" data-uk-close></button>
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="جستجو" autofocus>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-hidden@m">
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#" data-uk-toggle="target: #offcanvas">
+                            <span data-uk-navbar-toggle-icon></span>
+                        </a>
+                    </div>
+                    <div id="offcanvas" data-uk-offcanvas="flip:false; overlay: true">
+                        <div class="uk-offcanvas-bar mod-menu-side uk-padding-remove">
+                            <div class="uk-padding">
+                                <div class="mod-black">admin panel</div>
+                                <button class="uk-offcanvas-close mod-black" type="button" data-uk-close></button>
+                            </div>
+                            <ul class="uk-list mod-list uk-nav-parent-icon" uk-nav>
+                                <li class="mod-active"><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:home"></span> پیشخوان</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="uk-nav-sub mod-subnav">
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:user"></span> پروفایل</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:comment"></span> نظرات</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> تنظیمات</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> تنظیمات</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> تنظیمات</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> تنظیمات</a></li>
+                                <li><a href="#"><span class="uk-margin-small-left" data-uk-icon="icon:cog"></span> تنظیمات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" data-uk-margin>
+                    <div class="uk-text-large">
+                        نام تیم
+                    </div>            
+                </div>
+                <div class="uk-navbar-left mod-signout">
+                    <a href="#">
+                        <span>خروج</span>
+                        <span data-uk-icon="icon: sign-out;ratio:1.5"></span>
+                    </a>
+                </div>
+            </nav>
+            <div class="uk-section-small">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-body">
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col">نام و نام خانوادگی</th>
+                                    <th scope="col">کد ملی</th>
+                                    <th scope="col">تاریخ تولد</th>
+                                    <th scope="col">تلفن همراه</th>
+                                    <th scope="col">عملیات</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row" data-label=" ">
+                                        <input class="uk-checkbox mod-check" type="checkbox" id="m1">
+                                    </td>
+                                    <td data-label="نام و نام خانوادگی"><input type="text" class="mod-table-in t1" disabled></td>
+                                    <td data-label="کد ملی"><input type="text" class="mod-table-in t1" disabled></td>
+                                    <td data-label="تاریخ تولد"><input type="text" class="mod-table-in t1" disabled></td>
+                                    <td data-label="تلفن همراه"><input type="text" class="mod-table-in t1" disabled></td>
+                                    <td data-label="عملیات"><button class="uk-button mod-edit b1">ویرایش</button></td>
+                                  </tr>                              
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="assets/js/file.js"></script>

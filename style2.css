@@ -1,0 +1,269 @@
+@font-face{font-family:Vazir;src:url("./assets/fonts/Vazir.eot");src:url("./assets/fonts/Vazir.eot?#iefix") format('embedded-opentype'),url("./assets/fonts/Vazir.woff2") format('woff2'),url("./assets/fonts/Vazir.woff") format('woff'),url("./assets/fonts/Vazir.ttf") format('truetype');font-weight:400}
+html , .uk-h1,a, .uk-h2, .uk-h3,span, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 ,p ,input,.uk-navbar-nav>li>a{font-family: -apple-system,BlinkMacSystemFont,"Vazir",Roboto,"Helvetica Neue",Arial,sans-serif;}
+/* Start Your Styles */
+body{
+    background-color: #f2f7fa;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+}
+.mod-header{
+    padding: 20px;
+    background:  linear-gradient(90deg, rgba(201,208,207,1) 0%, rgba(20,182,150,1) 0%, rgba(75,214,201,1) 80%);;
+}
+.mod-side-title{
+    padding-top: 3px;
+    padding-bottom:3px;
+    border-bottom: 1px solid #666666;
+}
+.mod-side-menu{
+    background-color: #2F2F2F;
+}
+.mod-user-img{
+    width: 50px;
+}
+.mod-search{
+    border-radius: 20px;
+}
+.mod-black{
+    color: black;
+}
+.mod-white-bg{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.scrollableContent {
+    height: 100%;
+    margin: 0em;
+    overflow-y: auto;
+ }
+
+
+/* new */
+.mod-signout{
+    color: white;
+    font-size: 17px;
+}
+.uk-form-label.mod-label{
+    font-size:14px;
+    font-weight: bold;
+}
+.uk-input.mod-input,.uk-select.mod-select,.uk-textarea.mod-input{
+    background-color: #f8fbff;
+    border-radius: 5px;
+    border: 1px solid #20639B;
+}
+@media screen and (min-width: 960px) {
+    .uk-form-horizontal .uk-form-controls {
+        margin-right:120px;
+    }
+    .uk-form-horizontal .uk-form-label {
+        width:120px;
+    }
+}
+.mod-edit{
+    background-color: #20639B;
+    color: white;
+    border-radius: 5px;
+}
+.mod-edit-reg{
+    background-color: #173F5F;
+    color: white;
+    border-radius: 5px;
+}
+.mod-edit-con{
+    background-color: #2F2F2F;
+    color: white;
+    border-radius: 5px;
+}
+
+.uk-list.mod-list>li.mod-active,.uk-offcanvas-bar.mod-menu-side>.mod-list>li.mod-active{
+    background-color:#666666 !important;
+    border-right: 3px solid #2F2F2F !important;
+}
+.uk-list.mod-list>li.mod-active>a,.uk-list.mod-list>li.mod-active>a{
+    color: white !important;
+}
+.uk-list.mod-list>li{
+    padding: 12px 10px 12px 10px;
+    border-right: 3px solid #2F2F2F !important;
+    margin: 0px;
+}
+.uk-list.mod-list>li>a:hover{
+    color: inherit;
+}
+
+.scrollableContent {
+    height: 100%;
+    margin: 0em;
+    overflow-y: auto;
+ }
+
+
+ table {
+    /* border: 1px solid #ccc; */
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    border: 1px solid #ddd;
+
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  .mod-table-in{
+      background-color: white;
+      width: 100%;
+      border: none;
+  }
+
+  .mod-table-select{
+      width: 100%;
+  }
+  .mod-text1{
+      color: black;
+      font-weight: bold;
+  }
+.mod-modal{
+    margin-top: 100px;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+.mod-cancel{
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+}
+.mod-con{
+    border-radius: 5px;
+    background-color: mediumseagreen;
+    color: white;
+}
+.mod-box{
+    width:50%;
+    height:50px;
+    background-color: #f2f7fa;
+}
+.mod-cart{
+    height:auto;
+    width: 793.7007874px;
+    background-color: white;
+    padding: 20px;
+}
+.mod-print-btn{
+    background-color: #173F5F;
+    border-radius: 5px;
+    color: white;
+}
+@media print {
+    #pdf-button {
+      display: none;
+    }
+}
+/* new */
+.mod-login-bg{
+    background-image: url(./assets/img/bg2.png);
+}
+.uk-card.uk-card-default{
+    padding: 0px;
+}
+
+.mod-panel{
+    background-color: #f2f7fa;
+    border-radius: 10px !important;
+    margin-top: 30px;
+}
+.mod-panel-body{
+    padding: 30px;
+}
+.mod-title{
+    color: black;
+    font-size: 17px;
+    padding: 20px;
+}
+.mod-long-hr{
+    border:2px solid #173F5F;
+    border-color: #173F5F;
+    margin: 0px !important;
+}
+.mod-login-btn{
+    background-color: #173F5F;
+    color: white;
+    border-radius: 5px;
+}
